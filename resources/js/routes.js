@@ -45,6 +45,6 @@ export const routes = [
         name: 'editarCategoria',
         path: '/editarCategoria/:id',
         component: EditarCategoria
-    },
+    }
 
 ]

@@ -72,7 +72,7 @@ export default {
     methods: {
         async mostrarCategorias() {
             await this.axios
-                .get("/api/categoria")
+                .get("/api/cat")
                 .then((response) => {
                     this.categoriaProductos = response.data;
                 })
@@ -84,7 +84,7 @@ export default {
         eliminarCategoria(id) {
             if (confirm("¿Confirma eliminar Categoria?")) {
                 this.axios
-                    .delete(`/api/categoria/${id}`)
+                    .delete(`/api/cat/${id}`)
                     .then((response) => {
                         this.mostrarCategorias();
                     })

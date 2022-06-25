@@ -99,7 +99,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _this.axios.get("/api/categoria").then(function (response) {
+                return _this.axios.get("/api/cat").then(function (response) {
                   _this.categoriaProductos = response.data;
                 })["catch"](function (error) {
                   console.log(error);
@@ -118,7 +118,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this2 = this;
 
       if (confirm("¿Confirma eliminar Categoria?")) {
-        this.axios["delete"]("/api/categoria/".concat(id)).then(function (response) {
+        this.axios["delete"]("/api/cat/".concat(id)).then(function (response) {
           _this2.mostrarCategorias();
         })["catch"](function (error) {
           console.log(error);

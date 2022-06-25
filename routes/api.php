@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('cliente',App\Http\Controllers\ClienteController::class);
-Route::resource('categoria',App\Http\Controllers\CategoriaProductoController::class);
+Route::resource('cat',App\Http\Controllers\CategoriaProductoController::class);
